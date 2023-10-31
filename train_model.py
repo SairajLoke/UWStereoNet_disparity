@@ -16,11 +16,11 @@ parser.add_argument("--checkpoint_dir", default='checkpoint/dropuwstereo_disp_ci
 parser.add_argument("--summary_dir", default='summary/dropuwstereo_disp_cityscapes/', help="where to put summary files")
 parser.add_argument("--resume_dir", default=None, help="directory with checkpoint to resume training from")
 
-parser.add_argument("--num_steps", type=int, default=100000, help="number of training steps")
-parser.add_argument("--summary_freq", type=int, default=15, help="frequency to update summaries")
-parser.add_argument("--schedule_freq", type=int, default=50000, help="frequency to half learning rate")
-parser.add_argument("--print_summary_freq", type=int, default=50, help="frequency to print summary")
-parser.add_argument("--save_freq", type=int, default=10000, help="frequency to save model")
+parser.add_argument("--num_steps", type=int, default=10, help="number of training steps") #initially 100 000
+parser.add_argument("--summary_freq", type=int, default=5, help="frequency to update summaries")#initially 15
+parser.add_argument("--schedule_freq", type=int, default=50000, help="frequency to half learning rate")#initially 50 000
+parser.add_argument("--print_summary_freq", type=int, default=5, help="frequency to print summary")#initially50
+parser.add_argument("--save_freq", type=int, default=5, help="frequency to save model")#initially 10 000
 
 parser.add_argument("--w1", type=float, default=0.3, help="weight for initial disparity loss")
 parser.add_argument("--w2", type=float, default=0.7, help="weight for refined disparity loss")
