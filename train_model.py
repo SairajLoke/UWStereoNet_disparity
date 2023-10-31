@@ -60,7 +60,7 @@ WEIGHTS_LIST = [a.beta1, a.beta2, a.beta3, a.gamma1, a.gamma2, a.gamma3]
 os.environ['CUDA_VISIBLE_DEVICES'] = a.gpu
 
 
-def load_data(dirs, size, name='load_data'):save_
+def load_data(dirs, size, name='load_data'):
     '''
     load left image, right image and disparity map
     '''
